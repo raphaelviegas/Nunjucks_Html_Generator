@@ -1,0 +1,120 @@
+{% set pageTitle = 'Seja bem vindo ao Salas Fradique' %}
+{% extends '_layout.html' %}
+{% block content %}
+<tr>
+   <td style="padding: 35px 0 10px;" align="center">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 600; font-size: 28px; color: #464646; line-height: 1.2;">
+         Seja bem-vindo(a) ao espaço <br>Salas Fradique
+      </div>
+   </td>
+</tr>
+<tr>
+   <td align="left">
+      <div class="mobile-align"
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 24px; max-width: 560px; margin: 0 auto; padding-top: 10px;">
+         Olá {{cliente.nome}}, seja bem-vindo(a) ao Salas Fradique.
+         <div style="display:block;width:100%;height:8px;"></div>
+         Esperamos que seu tempo conosco seja confortável e nos colocamos a
+         disposição em caso de qualquer dúvida, crítica ou sugestão.
+         <div style="display:block;width:100%;height:8px;"></div>
+         A seguir você encontrará todas as informações necessárias para iniciar
+         seus atendimentos.
+      </div>
+   </td>
+</tr>
+<!-- CONTRATO -->
+<tr>
+   <td style="padding-top: 25px;">
+      <img src="https://www.salasfradique.com.br/emails/boas_vindas/contrato.png"
+         width="100%" alt="">
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 18px; color: #464646; line-height: 1.2; text-align: left;">
+         Informações sobre o contrato
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 16px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 1.6; text-align: left;">
+         Para começar, pedimos que você leia e assine o contrato anexo,
+         rubricando
+         todas as páginas. O contrato deverá ser entregue na recepção
+         <span style="font-weight:400">antes do
+         seu primeiro
+         atendimento.</span>
+         <div style="display:block;width:100%;height:8px;"></div>
+         <em><span style="font-weight: 500">Obs.:
+         </span>A impressão pode ser
+         feita frente e
+         verso.</em>
+      </div>
+   </td>
+</tr>
+<!-- CONVIVÊNCIA -->
+<tr>
+   <td style="padding-top: 25px;">
+      <img src="https://www.salasfradique.com.br/emails/boas_vindas/espaco_compartilhado.png"
+         width="100%" alt="">
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 18px; color: #464646; line-height: 1.2; text-align: left;">
+         Sobre a Convivência
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 16px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 1.6; text-align: left;">
+         Buscando o maior conforto para todos que circulam no espaço, pedimos que
+         durante sua estada você esteja atento aos pontos apresentados no anexo
+         "Espaço Compartilhado".
+      </div>
+   </td>
+</tr>
+<!-- PAGAMENTO -->
+<tr>
+   <td style="padding-top: 25px;">
+      <img src="https://www.salasfradique.com.br/emails/boas_vindas/pagamento.png"
+         width="100%" alt="">
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 18px; color: #464646; line-height: 1.2; text-align: left;">
+         Sobre o pagamento
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 16px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 1.6; text-align: left;">
+         O pagamento das horas avulsas deve ser realizado <span
+            style="font-weight: 600">48 horas
+         antes</span> da utilização do espaço. Um link será enviado pelo
+         whatsapp para o número {{cliente.telefone}}.
+         <div style="display:block;width:100%;height:8px;"></div>
+         Pedimos que por favor encaminhe o comprovante de pagamento para
+         <span
+            style="font-weight: 600;color:#202c39;">{{global.dadosGerais.email}}</span>
+         <div style="display:block;width:100%;height:8px;"></div>
+         <em style="color:darkred"><span style="font-weight: 500">Obs.: </span>
+         Caso o pagamento não seja realizado até a
+         data limite,
+         os horários solicitados serão cancelados,
+         conforme estabelecido em contrato.</em>
+      </div>
+   </td>
+</tr>
+{% endblock %}

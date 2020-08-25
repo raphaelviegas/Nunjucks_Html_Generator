@@ -1,0 +1,211 @@
+{% set pageTitle = 'Pagamento em aberto' %}
+{% extends '_layout.html' %}
+{% block content %}
+<tr>
+   <td style="padding: 35px 0 25px;" align="center">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 600; font-size: 28px; color: #464646; line-height: 1.2;">
+         Relação de pagamento em aberto
+      </div>
+   </td>
+</tr>
+<!-- PLANOS FIXOS -->
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 20px;font-weight: 600; color: #464646; line-height: 1.2; text-align: left;margin-bottom: 5px;">
+         Planos fixos
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 16px; color: #464646; line-height: 1.2; text-align: left;">
+         Em atraso
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 5px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 1.6; text-align: left;">
+         <table style="width: 100%; margin: 0 auto; margin-bottom: 5px;">
+            <tr style="background-color: rgba(255,111,89,0.5);">
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="50%" align="center">Nome do Cliente
+               </th>
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Valor</th>
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Vencimento</th>
+            </tr>
+            <!-- Fixo em Atraso -->
+            {% for pagto in fixoEmAtraso %}
+            <tr
+               style="border-bottom: solid 1px #f7f7f7;background-color:rgba(112,112,112,0.1)">
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.cliente}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.valor}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.vencimento}} 
+               </td>
+            </tr>
+            {% endfor %}
+         </table>
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 16px; color: #464646; line-height: 1.2; text-align: left;">
+         Pendente
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 5px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 1.6; text-align: left;">
+         <table style="width: 100%; margin: 0 auto; margin-bottom: 5px;">
+            <tr style="background-color: rgba(255,111,89,0.5);">
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="50%" align="center">Nome do Cliente
+               </th>
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Valor</th>
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Vencimento</th>
+            </tr>
+            <!-- Fixo Pendente -->
+            {% for pagto in fixoPendente %}
+            <tr
+               style="border-bottom: solid 1px #f7f7f7;background-color:rgba(112,112,112,0.1)">
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.cliente}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.valor}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.vencimento}} 
+               </td>
+            </tr>
+            {% endfor %}
+         </table>
+      </div>
+   </td>
+</tr>
+<!-- HORAS AVULSAS -->
+<tr>
+   <td style="padding-top: 20px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 20px;font-weight: 600; color: #464646; line-height: 1.2; text-align: left;margin-bottom: 5px;">
+         Horas avulsas
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 16px; color: #464646; line-height: 1.2; text-align: left;">
+         Em atraso
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 5px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 1.6; text-align: left;">
+         <table style="width: 100%; margin: 0 auto; margin-bottom: 5px;">
+            <tr style="background-color: rgba(255,111,89,0.5);">
+               <th style="font-size:13px;text-align:center;padding: 3px 6px;color:#464646"
+                  width="50%" align="center">Nome do Cliente
+               </th>
+               <th style="font-size:13px;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Valor</th>
+               <th style="font-size:13px;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Vencimento</th>
+            </tr>
+            <!-- Avulso em Aberto -->
+            {% for pagto in avulsoEmAtraso %}
+            <tr
+               style="border-bottom: solid 1px #f7f7f7;background-color:rgba(112,112,112,0.1)">
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.cliente}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.valor}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.vencimento}} 
+               </td>
+            </tr>
+            {% endfor %}
+         </table>
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 4px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 16px; color: #464646; line-height: 1.2; text-align: left;">
+         Pendente
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 5px;">
+      <div
+         style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 16px; color: #707070; line-height: 1.6; text-align: left;">
+         <table style="width: 100%; margin: 0 auto; margin-bottom: 5px;">
+            <tr style="background-color: rgba(255,111,89,0.5);">
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="50%" align="center">Nome do Cliente
+               </th>
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Valor</th>
+               <th style="font-size:13px;font-weight:bold;text-align:center;padding: 3px 6px;color:#464646"
+                  width="25%" align="center">Vencimento</th>
+            </tr>
+            <!-- Avulso Pendente -->
+            {% for pagto in avulsoPendente %}
+            <tr
+               style="border-bottom: solid 1px #f7f7f7;background-color:rgba(112,112,112,0.1)">
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.cliente}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.valor}} 
+               </td>
+               <td style="font-size:13px;font-weight:normal;padding: 0px 6px;vertical-align:center;color:#707070"
+                  align="center">
+                  {{pagto.vencimento}} 
+               </td>
+            </tr>
+            {% endfor %}
+         </table>
+      </div>
+   </td>
+</tr>
+<tr>
+   <td style="padding-top: 40px;">
+      <div style="width: 100%; border-top: 1px solid #d4d2ca;"></div>
+   </td>
+</tr>
+{% endblock %}

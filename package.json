@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "express-nunjucks": "^2.2.5"
+    "express-nunjucks": "^2.2.5",
+    "nunjucks": "^3.2.2"
   }
 }

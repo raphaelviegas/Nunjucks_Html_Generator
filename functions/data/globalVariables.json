@@ -1,0 +1,16 @@
+{
+  "global": {
+    "dadosGerais": {
+      "razaoSocial": "Espaço Fradique Escritórios Compartilhados LTDA",
+      "cnpj": "34.198.559/0001-90",
+      "endereco": "Rua Dr. Virgílio de Carvalho Pinto, 301 - São Paulo/SP",
+      "telefone": "(11) 9.5373.1226",
+      "email": "contato@salasfradique.com.br"
+    },
+    "dadosBancarios": {
+      "banco": "Banco Inter (077)",
+      "agencia": "0001",
+      "contaCorrente": "4555368-8"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{pageTitle}}</title>
+    <style>
+    	       .appleLinks a {
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 560px) {
+            .mobile-align {
+                text-align: left;
+            }
+
+            a[id="unsubscribe-url"],
+            a[id="manage-url"],
+            a[id="policy-url"] {
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+                display: block !important;
+                width: 100% !important;
+                border: none !important;
+                padding: 5px 0 !important;
+                text-decoration: underline !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .table-transform .table-transform-td {
+                display: inline-block !important;
+                vertical-align: top !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .list {
+                max-width: 150px !important
+            }
+        }
+    </style>
+</head>
+
+<body style="padding:0; margin:0; background: #e2e2e2">
+    <table cellspacing="0" valign="top" cellpadding="0" align="center" style="width: 100%;padding: 50px 0">
+        <tr valign="top">
+            <td align="center" width="100%">
+                <table cellspacing="0" cellpadding="0" align="center" width="100%" bgcolor="#fff"
+                    style="max-width: 630px; min-width: 330px; background: #fff;border-radius: 10px;padding: 20px 30px">
+                    <tr>
+                        <td align="center" style="padding: 0 15px;">
+                            <table cellspacing="0" cellpadding="0" width="100%" style="max-width: 630px;">
+                                <tr>
+                                    <td align="left" style="padding: 15px 0 0 10px; width: 99px;">
+                                        <a href="https://www.salasfradique.com.br" target="_blank">
+                                            <img src="https://www.salasfradique.com.br/img/logos/logo-texto-min.png"
+                                                alt="Logo_SalasFradique" width="180">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 18px 15px 0;">
+                            <div style="width: 100%; border-top: 1px solid #d4d2ca;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0 15px;">
+                            <table cellspacing="0" cellpadding="0" align="center" width="100%">
+
+
+{# Aqui começa o conteúdo #}
+
+                          {% block content %}{% endblock %}
+                                
+
+{# Aqui acaba o conteúdo #}
+                                
+                                <tr>
+                                    <td style="padding-top: 40px;">
+                                        <div style="width: 100%; border-top: 1px solid #d4d2ca;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="width: 100%; border-top: 1px solid #d4d2ca;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 9px 37px 27px;">
+                                        <div
+                                            style="text-align:center; font-family:'Helvetica Neue', sans-serif; font-size: 12px; color:#9b9b9b; padding-top:17px; line-height: 18px;">
+                                            {{global.dadosGerais.razaoSocial}} | CNPJ:
+                                            {{global.dadosGerais.cnpj}}</div>
+                                        <div id="address"
+                                            style="text-align:center; font-family:'Helvetica Neue', sans-serif; font-size: 12px; color:#9b9b9b; line-height: 18px;">
+                                            <span class="appleLinks">{{global.dadosGerais.endereco}}</span>
+                                            <br>Telefone: {{global.dadosGerais.telefone}}</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      </table>
+    </td>
+    </tr>
+    </table>
+</body>
+
+</html>
+
