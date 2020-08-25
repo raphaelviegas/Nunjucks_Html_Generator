@@ -1,0 +1,55 @@
+{
+  "fixoEmAtraso": [
+    {
+      "cliente": "Teste de Nome Fixo",
+      "valor": "10,00",
+      "vencimento": "28/08/2020"
+    },
+    {
+      "cliente": "Teste de Nome 2",
+      "valor": "20,00",
+      "vencimento": "27/08/2020"
+    },
+    {
+      "cliente": "Teste de Nome",
+      "valor": "18,00",
+      "vencimento": "28/08/2020"
+    }
+  ],
+  "fixoPendente": [
+    {
+      "cliente": "Teste de Nome Fixo P",
+      "valor": "10,00",
+      "vencimento": "28/08/2020"
+    },
+    {
+      "cliente": "Teste de Nome 2 FP",
+      "valor": "20,00",
+      "vencimento": "27/08/2020"
+    },
+    {
+      "cliente": "Teste de Nome",
+      "valor": "18,00",
+      "vencimento": "28/08/2020"
+    }
+  ],
+  "avulsoEmAtraso": [
+    {
+      "cliente": "Teste de Nome Avulso",
+      "valor": "10,00",
+      "vencimento": "28/08/2020"
+    },
+    {
+      "cliente": "Teste de Nome 2",
+      "valor": "20,00",
+      "vencimento": "27/08/2020"
+    }
+  ],
+  "avulsoPendente": [
+    {
+      "cliente": "Teste de Nome Avulso",
+      "valor": "10,00",
+      "vencimento": "28/08/2020"
+    }
+  ]
+}

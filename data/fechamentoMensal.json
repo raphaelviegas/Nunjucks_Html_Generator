@@ -1,0 +1,123 @@
+{
+  "base": {
+    "mesAno": "Setembro/2020",
+    "mesAtual": "Setembro/2020",
+    "mesAnterior": "Agosto/2020",
+    "dataVencimento": "05/09/2020"
+  },
+  "cliente": {
+    "nome": "Nome Teste",
+    "periodos": "0,00",
+    "diferenca": "256,00",
+    "totalPago": "0,00",
+    "totalAPagar": "416,00",
+    "totalReservado": "256,00",
+    "totalUtilizado": "256,00",
+    "formaDePagamento": "Transferência"
+  },
+  "periodos": [
+    {
+      "data": null,
+      "sala": null,
+      "periodo": null
+    }
+  ],
+  "horasAgendadas": [
+    {
+      "sala": "Sala 1",
+      "valor": "32,00",
+      "dataEHora": "4/8/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "5/8/20 19:00"
+    },
+    {
+      "sala": "Sala 1",
+      "valor": "32,00",
+      "dataEHora": "11/8/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "12/8/20 19:00"
+    },
+    {
+      "sala": "Sala 1",
+      "valor": "32,00",
+      "dataEHora": "18/8/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "19/8/20 19:00"
+    },
+    {
+      "sala": "Sala 1",
+      "valor": "32,00",
+      "dataEHora": "25/8/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "26/8/20 19:00"
+    }
+  ],
+  "horasUtilizadas": [
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "25/6/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "8/7/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "14/7/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "14/7/20 20:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "15/7/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "21/7/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "22/7/20 19:00"
+    },
+    {
+      "sala": "Sala 3",
+      "valor": "32,00",
+      "dataEHora": "28/7/20 19:00"
+    }
+  ],
+  "planosContratados": [
+    {
+      "fim": "20:00",
+      "sala": "Sala 1",
+      "inicio": "19:00",
+      "diaDaSemana": "Terça"
+    },
+    {
+      "fim": "20:00",
+      "sala": "Sala 3",
+      "inicio": "19:00",
+      "diaDaSemana": "Quarta"
+    }
+  ]
+}

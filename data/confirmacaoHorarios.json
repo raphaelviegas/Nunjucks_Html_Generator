@@ -1,0 +1,35 @@
+{
+  "base": {
+    "nomeCliente": "Nome Teste",
+    "dataLimite": "25/08/2020"
+  },
+  "periodos": [
+    {
+      "diaDaSemana": "Segunda",
+      "sala": "Sala 3",
+      "periodo": "Manhã"
+    }
+  ],
+  "planosFixos": [
+    {
+      "diaDaSemana": "Terça",
+      "sala": "Sala 1",
+      "horario": "19:00"
+    },
+    {
+      "diaDaSemana": "Terça",
+      "sala": "Sala 1",
+      "horario": "10:00"
+    },
+    {
+      "diaDaSemana": "Quarta",
+      "sala": "Sala 4",
+      "horario": "11:00"
+    },
+    {
+      "diaDaSemana": "Quinta",
+      "sala": "Sala 3",
+      "horario": "21:00"
+    }
+  ]
+}

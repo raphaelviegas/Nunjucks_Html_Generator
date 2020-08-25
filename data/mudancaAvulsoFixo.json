@@ -1,0 +1,7 @@
+{
+  "cliente": {
+    "nome": "Nome de Teste",
+    "login": "teste@teste.com",
+    "senha": "teste1234"
+  }
+}

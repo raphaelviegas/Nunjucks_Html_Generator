@@ -1,0 +1,21 @@
+{
+  "name": "emails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "dev:fechamentoMensal": "nunjucks fechamentoMensal.html fechamentoMensal.json --path templates --out build --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "nunjucks-cli": "^1.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-nunjucks": "^2.2.5"
+  }
+}
